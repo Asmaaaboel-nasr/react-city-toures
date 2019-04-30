@@ -1,0 +1,160 @@
+body {
+  color: black;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: "Raleway", "[RosewoodStd]";
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* start global*/
+.contain {
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+li {
+  list-style: none;
+}
+/*start nav*/
+.nav {
+  background-color: black;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px 0;
+}
+.nav ul li {
+  padding-right: 20px;
+}
+.bread {
+  display: none;
+}
+
+.tours {
+  display: flex;
+  flex-direction: row;
+}
+.tour {
+  flex-basis: 20%;
+  padding-right: 30px;
+}
+
+.tour img {
+  width: 100%;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+.img-container {
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  display: block;
+  top: 5%;
+  right: 5%;
+  color: Green;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+.img-container:hover .close-btn {
+  opacity: 1;
+}
+.content {
+  padding: 1rem;
+  background-color: #f1ebeb;
+}
+
+.content h3 {
+  text-transform: uppercase;
+  color: Green;
+}
+.content h4 {
+  text-transform: capitalize;
+  color: Black;
+  margin: 0.2rem 0 0.6rem 0;
+}
+.content h5 {
+  text-transform: capitalize;
+}
+.content span {
+  color: Green;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.footer {
+  background-color: black;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  margin-top: 50px;
+}
+.clear-fix {
+  clear: both;
+}
+/*medium devices*/
+@media (min-width: 768px) and (max-width: 992px) {
+}
+/*small devices*/
+@media (min-width: 576px) and (max-width: 768px) {
+  .contain {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 992px) {
+  .tours .contain:last-child {
+    display: none;
+  }
+}
+/*xs devices*/
+@media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav .container {
+    padding: 0;
+    width: 100%;
+  }
+  .nav-items {
+    color: #f05f40;
+    padding-left: 20px;
+  }
+  .nav .links {
+    display: none;
+    background-color: #fff;
+  }
+  .nav .bread {
+    display: block;
+    padding-right: 30px;
+    color: #ddd;
+  }
+  .contain {
+    padding-left: 5px;
+  }
+  .tour {
+    padding-right: 10px;
+  }
+  h3,
+  h4 {
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
